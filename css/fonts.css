@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "soleilBold";
+    src: url("fonts/SoleilBold.otf");
+}
+@font-face {
+    font-family: "soleilBook";
+    src: url("fonts/SoleilBook.otf");
+}
+@font-face {
+    font-family: "soleilLight";
+    src: url("fonts/SoleilLight.otf");
+}
+@font-face {
+    font-family: "soleilReg";
+    src: url("fonts/SoleilRegular.otf");
+}

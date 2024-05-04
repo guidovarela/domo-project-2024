@@ -1,0 +1,315 @@
+@import url('fonts.css');
+
+/* Iconos - FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+
+:root{
+    --prim-color: #3871ff;
+    --site-name: "compleet labs";
+    --sec-color: #283345;
+    --accent-color: #ffffff;
+    --font:"soleilReg";
+    --bg-img: url("../img/asset-background.jpg") no-repeat right;
+    --font-regular:"soleilReg";
+    --font-light:"soleilLight";
+    --font-book:"soleilBook";
+    --font-bold:"soleilBold";   
+}
+
+html{
+    font-family: var(--font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font);
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+
+/* header*/
+.bg{
+    background: url("../img/asset-background.jpg") no-repeat right, var(--sec-color);
+    background-size: 40%;
+    background-position: top right;
+}
+
+.header,#services,#main-front{
+    color: var(--accent-color);
+  }
+  .header .logo{
+    font-size: .9em;
+  }
+  /* main-nav */
+  .header .main-nav{
+    font-family: var(--font-light);
+    }
+    .header .main-nav a{
+      color: rgba(255, 255, 255, 0.5);
+      font-size: .9em;
+    }
+    .header .main-nav a.active{
+      color: var(--accent-color);
+    }
+    .header .main-nav a:hover{
+      color: var(--accent-color);
+    }
+    .header .main-nav a.active:hover{
+      color: var(--prim-color);
+    }
+
+
+/* presentation */
+#main-front .presentation{
+  margin: 8em 0;
+  width: 52%;
+  height: 45vh;
+}
+#main-front .title h2{
+  font-family: var(--font-bold) ;
+}
+#main-front .content{
+  color: rgba(255, 255, 255, 0.5);font-size: 1em;
+  font-family: var(--font-light);
+  letter-spacing:.5px;
+  }
+  #main-front .content{
+    margin-bottom: 5em;
+  }
+
+  .btn-outline, .btn-full{
+    padding: .6em 2.3em;
+    border-radius: 4px;
+    font-size: .9em;
+  }
+  .btn-outline:hover{
+    border-color:var(--prim-color);
+    color: var(--prim-color);
+  }
+  .btn-full:hover{
+    border:2px solid var(--prim-color);
+    color: var(--accent-color);
+    background: none;
+  }
+
+
+  
+  .btn-outline{
+    border: 2px solid rgba(92, 92, 92, 0.541);
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .btn-online-lightmode{
+    border: 3px solid rgba(83, 83, 83, 0.15);
+    color: rgba(75, 75, 75, 0.637);
+  }
+  .btn-full{
+    background: var(--prim-color);
+    border: none;
+    color: var(--accent-color);
+    position: relative;
+    left: 1em;
+    }
+
+/* services */
+#services{
+  position: relative;
+  top: 2em;
+}
+#services .title{
+  width:60%;
+  margin: 0 auto;
+  
+}
+#services .title h3{
+    font-family: var(--font-bold);
+}
+#services .title p{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .cards{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+  }
+  .cards .card-single{
+    background: var(--accent-color);
+    /* width: 30%; */
+    color: black;
+    padding: 1em 3em;
+  }
+  .cards .icon{
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+  }
+  .cards .icon span{
+      border-radius: 50%;
+      background: var(--prim-color);
+      color: var(--accent-color);
+      padding: .5em;
+      font-size: 2em;
+    }
+
+  .cards .title-card{
+    font-family: var(--font-book);
+    font-size: 1.2em;
+    margin: .6em 0 ;
+    
+  }
+  .cards .title-content{
+    color: rgba(0, 0, 0, 0.493);
+    font-size: 1em;
+    line-height: 2em ;
+  }
+  .cards .link-card{}
+  .cards .link-card.btn-outline{
+  }
+
+
+/* technologies */
+  #technologies{
+    padding-top: 9em;
+    background: var(--prim-color);
+  }
+  
+  #technologies .content h3{ 
+    font-family: var(--font-book);
+    color: white;
+  }
+  #technologies .content p{ 
+    color: rgba(255, 255, 255, 0.3);
+  }
+  #technologies .tech-icons{ 
+    color: white;
+    font-size: 4em;
+    position: relative;
+    top: -.4em;
+    }
+    #technologies .tech-icons ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      }  
+      #technologies .tech-icons ul li{
+        width: 40%;
+      }
+
+
+/* clients */
+#clients{
+  padding-top:3em;
+}
+#clients .clients-title{
+  color: rgba(0, 0, 0, 0.342);
+}
+#clients .clients-title h4{
+  font-size: .7em;
+  font-family: var(--font-light);
+  text-transform: uppercase;
+}
+#clients .logos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#clients .logos div{
+  width: 15%;
+}
+#clients .logos div img{
+  width: 100%;
+}
+
+.pills{
+  position: relative;
+  top: 3em;
+}
+
+.pills h5{
+  margin-top: .5em;
+}
+.pills p{
+  width: 60%;
+  font-size: .7em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.pills .btn-outline{
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.pills .btn-outline:hover{
+  border-color: var(--accent-color);
+  color:var(--accent-color)
+}
+.pill-right, .pill-left{
+  background: var(--prim-color);
+  color: white;
+  border-radius: 4px;
+}
+
+.pill-right{
+  background: url("../img/our_projects.jpg") no-repeat, var(--prim-color);
+  background-size: auto 90%;
+  background-position: 95% 100%;
+}
+
+/* footer */
+.footer{
+  padding-top: 7em;
+  background: var(--sec-color);
+  color: white;
+  }
+  .contacts .social a, .contacts p, .footer-links ul li a{
+    color:rgba(255, 255, 255, 0.5)
+  }
+  .contacts p{
+    width: 70%;
+  }
+  .contacts .social a{
+    margin-right: 1em;
+    font-size: 1em;
+  }
+  .contacts .social a:hover{
+    color: white;
+  }
+
+  .footer-links span{
+    font-family: var(--font-light);
+    font-size: .6em;
+    letter-spacing: .2em;
+  }
+  .footer-links a{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: .8em;
+  }
+
+
+  .credits{
+    border: 1px solid rgba(255, 255, 255, 0.568);
+    border-radius: 3px;
+    padding: 1em;
+    }
+    .credits:hover{
+      background: rgba(255, 255, 255, 0.199);
+    }
+    
+    .credits a{
+      color: white;
+      margin-left: 2em;
+    }
+    .credits a:hover{
+      color: rgba(255, 255, 255, 0.521);
+    }
